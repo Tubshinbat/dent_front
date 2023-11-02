@@ -77,13 +77,9 @@ export default function Page({ params }) {
                 </div>
                 <div className="page-content">
                   {data.pictures[0] && (
-                    <Image
+                    <img
                       src={`${base.cdnUrl}/${data.pictures[0]}`}
                       className="page-content-picture"
-                      width="0"
-                      height="0"
-                      sizes="100vw"
-                      quality="100"
                     />
                   )}
                   <div
@@ -107,12 +103,8 @@ export default function Page({ params }) {
                             href={`/news/${el._id}`}
                             className="side-news-pic-box"
                           >
-                            <Image
+                            <img
                               src={`${base.cdnUrl}/450/${el.pictures[0]}`}
-                              width="0"
-                              height="0"
-                              sizes="100vw"
-                              quality="100"
                               className="side-news-picture"
                             />
                           </Link>

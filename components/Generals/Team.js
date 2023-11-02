@@ -20,14 +20,7 @@ const Team = ({ data }) => {
   return (
     <div className="team">
       <div className="team-picture-box">
-        <Image
-          className="team-picture"
-          width="0"
-          height="0"
-          sizes="100vw"
-          quality="100"
-          src={`${base.cdnUrl}/${data.picture}`}
-        />
+        <img className="team-picture" src={`${base.cdnUrl}/${data.picture}`} />
       </div>
       <div className="team-info">
         <h4> {data.name}</h4>

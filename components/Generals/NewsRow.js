@@ -11,12 +11,8 @@ const NewsRow = ({ data }) => {
       <div className="news-row-item">
         <div className="news-row-picture-box">
           <Link href={`/news/${data._id}`}>
-            <Image
+            <img
               className="news-row-picture"
-              width="0"
-              height="0"
-              sizes="100vw"
-              quality="100"
               src={`${base.cdnUrl}/450/${data.pictures[0]}`}
             />
           </Link>

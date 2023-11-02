@@ -29,12 +29,8 @@ const Banner = () => {
             <div className={`BannerBg`}> </div>
             {el.type === "photo" && (
               <div className={`banner-image-box `}>
-                <Image
+                <img
                   className={`banner-image`}
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  quality="100"
                   src={`${base.cdnUrl}/${el.picture}`}
                 />
               </div>
